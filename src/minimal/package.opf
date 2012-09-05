@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package version="3.0"
+    xmlns="http://www.idpf.org/2007/opf" 
+    unique-identifier="pub-id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="pub-id">urn:uuid:7F3EB1DC-948C-3602-B3B6-D565B3DD47D3</dc:identifier>
+        <dc:title>북디자이너에게 고함</dc:title>
+        <dc:language>ko</dc:language>
+        <meta property="dcterms:modified">2012-09-04T12:00:00Z</meta>
+    </metadata>
+    <manifest>
+        <item id="toc" 
+            href="toc.xhtml" 
+            properties="nav"
+            media-type="application/xhtml+xml"/>
+        <item id="flowdas" 
+            href="flowdas.xhtml" 
+            media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine>
+        <itemref idref="flowdas"/>
+    </spine>
+</package>

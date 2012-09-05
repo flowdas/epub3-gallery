@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# http://www.flowdas.com
+import os
+import zipfile
+
+def build_epub(package):
+    epub = zipfile.ZipFile(package + '.epub' , 'w', zipfile.ZIP_DEFLATED, True)
+    epub.writestr(zipfile.ZipInfo('mimetype'), 'application/epub+zip', zipfile.ZIP_STORED)
+    rootdir = os.path.join('src', package)
+    for root, dirs, files in os.walk(rootdir, followlinks=True):
+        for name in files:
+            if name.startswith('.'):
+                pass
+            filename = os.path.join(root, name)
+            assert filename.startswith(rootdir + os.sep)
+            arcname = filename[len(rootdir) + 1:]
+            epub.write(filename, arcname)
+    epub.close()
+    
+def main():
+    for package in os.listdir('src'):
+        build_epub(package)
+   
+if __name__ == '__main__':
+    main()
