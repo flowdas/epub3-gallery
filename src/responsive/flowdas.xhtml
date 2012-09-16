@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>반응형 판짜기 예제</title>
+        <style type="text/css">
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            .box {
+                width: 25%;
+                line-height: 10em;
+                margin: 0 auto;
+                float: left;
+                text-align: center;
+            }
+            @media (min-width: 481px) and (max-width: 1024px) {
+                .box {
+                    width: 33.3333%;
+                }
+            } 
+            @media (min-width: 321px) and (max-width: 480px) {
+                .box {
+                    width: 50%;
+                }
+            }
+            @media (max-width: 320px) {
+                .box {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <a href="http://www.flowdas.com/" title="flowdas.com"><img src="flowdas.png" /></a>
+        </div>
+        <div class="box">
+            <p style="background: #f00; color: #fff">1</p>
+        </div>
+        <div class="box">
+            <p style="background: #b00; color: #fff">2</p>
+        </div>
+        <div class="box">
+            <p style="background: #700; color: #fff">3</p>
+        </div>
+        <div class="box">
+            <p style="background: #300; color: #fff">4</p>
+        </div>
+        <div class="box">
+            <p style="background: #0f0; color: #fff">5</p>
+        </div>
+        <div class="box">
+            <p style="background: #0b0; color: #fff">6</p>
+        </div>
+        <div class="box">
+            <p style="background: #070; color: #fff">7</p>
+        </div>
+        <div class="box">
+            <p style="background: #030; color: #fff">8</p>
+        </div>
+        <div class="box">
+            <p style="background: #00f; color: #fff">9</p>
+        </div>
+        <div class="box">
+            <p style="background: #00b; color: #fff">10</p>
+        </div>
+        <div class="box">
+            <p style="background: #007; color: #fff">11</p>
+        </div>
+        <div class="box">
+            <p style="background: #003; color: #fff">12</p>
+        </div>
+    </body>
+</html>
